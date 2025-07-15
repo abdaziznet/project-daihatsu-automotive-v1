@@ -19,12 +19,12 @@ interface CarCardProps {
 export default function CarCard({ car, onCarSelect }: CarCardProps) {
   const handleViewDetails = () => {
     onCarSelect(car);
-    const detailsSection = document.getElementById('details');
+    const detailsSection = document.getElementById("details");
     if (detailsSection) {
-      detailsSection.scrollIntoView({ behavior: 'smooth' });
+      detailsSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
+
   return (
     <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
       <CardHeader className="p-0">
@@ -40,12 +40,16 @@ export default function CarCard({ car, onCarSelect }: CarCardProps) {
         </div>
       </CardHeader>
       <CardContent className="p-4 flex-grow">
-        <CardTitle className="text-xl font-bold text-primary font-headline">{car.name}</CardTitle>
-        <p className="text-lg font-semibold text-accent mt-1">{car.price}</p>
+        <CardTitle className="text-xl font-bold text-primary font-headline">
+          {car.name}
+        </CardTitle>
+        <p className="text-lg font-semibold text-accent mt-1">
+          Mulai dari {car.startingPrice}
+        </p>
       </CardContent>
       <CardFooter className="p-4 pt-0">
         <Button onClick={handleViewDetails} className="w-full">
-          View Details
+          Lihat Detail
         </Button>
       </CardFooter>
     </Card>

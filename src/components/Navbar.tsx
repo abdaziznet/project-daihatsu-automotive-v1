@@ -68,8 +68,13 @@ export default function Navbar() {
                   prefetch={false}
                   onClick={() => setSheetOpen(false)}
                 >
-                  <Car className="h-6 w-6 text-primary" />
-                  <span>AutoShowcase</span>
+                  {/* <Car className="h-6 w-6 text-primary" />
+                  <span>AutoShowcase</span> */}
+                  <Image
+                    src={logo} // Pastikan path diawali dengan '/'
+                    alt="Daihatsu Logo"
+                    className="h-10 w-auto"
+                  />
                 </Link>
                 <div className="grid gap-2">
                   {navLinks.map((link) => (

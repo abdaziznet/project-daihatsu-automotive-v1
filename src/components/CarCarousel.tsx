@@ -48,10 +48,10 @@ export default function CarCarousel({ images }: CarCarouselProps) {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-8 md:p-12">
                   <h2 className="text-3xl md:text-5xl font-bold text-white shadow-lg font-headline">
-                    Discover the new {img.name}
+                    Temukan yang baru "{img.name}"
                   </h2>
                   <p className="text-lg text-white/90 mt-2 max-w-lg">
-                    Experience unparalleled performance and luxury.
+                    Rasakan performa dan kemewahan yang tak tertandingi
                   </p>
                 </div>
               </div>

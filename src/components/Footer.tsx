@@ -32,7 +32,7 @@ export default function Footer() {
               <span className="text-2xl font-bold">AutoShowcase</span> */}
             </Link>
             <p className="text-sm text-primary-foreground/80">
-              The best way to find your next dream car.
+              Cara terbaik untuk menemukan mobil impian Anda berikutnya
             </p>
           </div>
           <div>
