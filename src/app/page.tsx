@@ -8,6 +8,7 @@ import FeaturedCars from "@/components/FeaturedCars";
 import Footer from "@/components/Footer";
 import { bannerImages, cars } from "@/data/cars";
 import type { Car } from "@/lib/types";
+import Reviews from "@/components/Reviews";
 
 export default function Home() {
   const [selectedCar, setSelectedCar] = useState<Car>(cars[0]);
@@ -28,12 +29,17 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-background">
       <Navbar />
       <main className="flex-grow">
-        <CarCarousel images={bannerPromoImage} />
+        <div id="top-of-page">
+          <CarCarousel images={bannerPromoImage} />
+        </div>
         <div id="details">
           <HeroSection car={selectedCar} />
         </div>
         <div id="catalog">
           <FeaturedCars cars={cars} onCarSelect={setSelectedCar} />
+        </div>
+        <div id="reviews">
+          <Reviews />
         </div>
       </main>
       <div id="contact">

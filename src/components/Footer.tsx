@@ -6,11 +6,20 @@ import {
   Facebook,
   Twitter,
   Instagram,
+  Contact2Icon,
+  Contact,
+  ContactIcon,
+  HomeIcon,
+  CarIcon,
+  InfoIcon,
+  ListIcon,
+  StarIcon,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/images/daihatsu-automotive-logo.png";
 import { contact } from "@/data/cars";
+import { T } from "@genkit-ai/googleai";
 
 export default function Footer() {
   return (
@@ -40,38 +49,52 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
-                  className="text-sm hover:underline"
+                  href="#top-of-page"
+                  className="flex items-center text-sm hover:underline gap-2"
                   prefetch={false}
                 >
-                  Home
+                  <HomeIcon className="h-4 w-4" />
+                  <span>Home</span>
                 </Link>
               </li>
               <li>
                 <Link
                   href="#catalog"
-                  className="text-sm hover:underline"
+                  className="flex items-center text-sm hover:underline gap-2"
                   prefetch={false}
                 >
-                  Catalog
+                  <CarIcon className="h-4 w-4" />
+                  <span>Catalog</span>
                 </Link>
               </li>
               <li>
                 <Link
                   href="#details"
-                  className="text-sm hover:underline"
+                  className="flex items-center text-sm hover:underline gap-2"
                   prefetch={false}
                 >
-                  Details
+                  <ListIcon className="h-4 w-4" />
+                  <span>Details</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#reviews"
+                  className="flex items-center text-sm hover:underline gap-2"
+                  prefetch={false}
+                >
+                  <StarIcon className="h-4 w-4" />
+                  <span>Reviews</span>
                 </Link>
               </li>
               <li>
                 <Link
                   href="#contact"
-                  className="text-sm hover:underline"
+                  className="flex items-center text-sm hover:underline gap-2"
                   prefetch={false}
                 >
-                  Contact
+                  <ContactIcon className="h-4 w-4" />
+                  <span>Contact</span>
                 </Link>
               </li>
             </ul>
@@ -80,24 +103,42 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
-                <Mail className="h-4 w-4" />
-                <span>{contact.email}</span>
+                <a
+                  href={`mailto:${contact.email}?subject=Ketertarikan%20Mobil&body=Halo,%0ASaya tertarik dengan mobil yang Anda tawarkan di website resmi anda dan ingin mengetahui informasi lebih lanjut. Mohon bantuannya untuk detail lengkapnya. Terima kasih.`}
+                  className="flex items-center gap-2 text-sm hover:underline"
+                >
+                  <Mail className="h-4 w-4" />
+                  <span>{contact.email}</span>
+                </a>
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                <span>{contact.phone}</span>
+                <a
+                  href={`https://wa.me/${
+                    contact.phone
+                  }?text=${encodeURIComponent(
+                    "Halo admin Daihatsu Automotive, saya tertarik dengan promo dan penjualan mobil Daihatsu yang ada di website. Boleh saya tahu info lebih lanjutnya. Terima kasih."
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm hover:underline"
+                >
+                  <Phone className="h-4 w-4" />
+                  <span>{contact.phone}</span>
+                </a>
               </li>
-              <li className="flex items-center gap-2">
+              {/* <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
                 <span>{contact.address}</span>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               <Link
-                href="#"
+                href="https://www.facebook.com/share/1Aht7rEovw/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary-foreground/80 hover:text-white transition-colors"
                 prefetch={false}
                 aria-label="Facebook"
@@ -105,15 +146,19 @@ export default function Footer() {
                 <Facebook className="h-6 w-6" />
               </Link>
               <Link
-                href="#"
+                href="https://www.tiktok.com/@daihatsu.automotive?_t=ZS-8xuHnDDhvVK&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary-foreground/80 hover:text-white transition-colors"
                 prefetch={false}
-                aria-label="Twitter"
+                aria-label="Tiktok"
               >
                 <Twitter className="h-6 w-6" />
               </Link>
               <Link
-                href="#"
+                href="https://www.instagram.com/daihatsu_automotive/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary-foreground/80 hover:text-white transition-colors"
                 prefetch={false}
                 aria-label="Instagram"

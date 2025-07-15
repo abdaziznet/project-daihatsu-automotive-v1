@@ -30,7 +30,7 @@ export const bannerImages: BannerImage[] = [
 
 export const contact: ContactPerson = {
   name: "Andriyansyah",
-  phone: "0896-5694-1214",
+  phone: "+6289656941214",
   email: "andri010390@gmail.com",
   address: "Jl. Ciledug Raya, Jakarta, Indonesia",
 };
