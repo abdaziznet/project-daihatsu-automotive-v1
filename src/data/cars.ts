@@ -1,10 +1,36 @@
-import type { Car } from "@/lib/types";
+import type { BannerImage, Car, ContactPerson } from "@/lib/types";
+import banner_1 from "@/assets/images/banner-1.png"
+import banner_2 from "@/assets/images/banner_2.png"
+
+
+export const bannerImages: BannerImage[] = [
+  {
+    id:1,
+    name: "New Terios",
+    image: `${banner_1.src}`,
+    dataAiHint: "sports car",
+  },
+  {
+    id:2,
+    name: "New Terios",
+    image: `${banner_2.src}`,
+    dataAiHint: "sports car",
+  }
+  
+]
+
+export const contact: ContactPerson = {
+  name: "Andriyansyah",
+  phone: "0896-5694-1214",
+  email: "andri010390@gmail.com",
+  address: "Jl. Ciledug Raya, Jakarta, Indonesia",
+};
 
 export const cars: Car[] = [
   {
     id: 1,
-    name: "Stallion GT",
-    price: "$85,000",
+    name: "Rocky Hybrid",
+    price: "Rp. ",
     image: "https://placehold.co/600x400.png",
     promoImage: "https://placehold.co/1200x600.png",
     dataAiHint: "sports car",

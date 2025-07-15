@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
+import Image from "next/image";
+import logo from "@/assets/images/daihatsu-logo.svg";
 
 const navLinks = [
   { href: "#", label: "Home" },
@@ -17,21 +19,33 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div id="top-of-page"></div>
       <div className="container flex h-16 max-w-7xl items-center justify-between">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
-          <Car className="h-6 w-6 text-primary" />
-          <span className="font-bold text-lg">AutoShowcase</span>
+          <Image
+            src={logo} // Pastikan path diawali dengan '/'
+            alt="Daihatsu Logo"
+            className="h-10 w-auto"
+          />
+          {/* <img src={logo.src} alt="Daihatsu Logo" className="h-8 w-auto" /> */}
+          {/* <Car className="h-6 w-6 text-primary" /> */}
+          {/* <span className="font-bold text-lg">AutoShowcase</span> */}
         </Link>
         <nav className="hidden md:flex gap-6 items-center">
           {navLinks.map((link) => (
             <Link
               key={link.label}
               href={link.href}
-              className="text-sm font-medium hover:text-primary transition-colors"
+              // className="text-sm font-medium hover:text-primary transition-colors"
+              className="block py-2 px-4 text-gray-800 rounded-md 
+                         hover:bg-blue-500 hover:text-white 
+                         transition-colors duration-300 ease-in-out"
               prefetch={false}
               onClick={(e) => {
                 e.preventDefault();
-                document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
+                document
+                  .querySelector(link.href)
+                  ?.scrollIntoView({ behavior: "smooth" });
               }}
             >
               {link.label}
@@ -66,7 +80,9 @@ export default function Navbar() {
                       prefetch={false}
                       onClick={(e) => {
                         e.preventDefault();
-                        document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
+                        document
+                          .querySelector(link.href)
+                          ?.scrollIntoView({ behavior: "smooth" });
                         setSheetOpen(false);
                       }}
                     >

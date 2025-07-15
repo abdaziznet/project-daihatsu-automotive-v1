@@ -8,7 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay"
+import Autoplay from "embla-carousel-autoplay";
 
 interface CarouselImage {
   image: string;
@@ -23,8 +23,8 @@ interface CarCarouselProps {
 export default function CarCarousel({ images }: CarCarouselProps) {
   return (
     <section className="w-full">
-      <Carousel 
-        className="w-full" 
+      <Carousel
+        className="w-full"
         opts={{ loop: true }}
         plugins={[
           Autoplay({
@@ -36,7 +36,7 @@ export default function CarCarousel({ images }: CarCarouselProps) {
         <CarouselContent>
           {images.map((img, index) => (
             <CarouselItem key={index}>
-              <div className="relative h-[400px] md:h-[500px] lg:h-[600px] w-full">
+              <div className="relative h-[400px] md:h-[500px] lg:h-[800px] w-full">
                 <Image
                   src={img.image}
                   alt={`Promotional image of ${img.name}`}

@@ -13,3 +13,17 @@ export type Car = {
     mileage: string;
   };
 };
+
+export type BannerImage = {
+  id: number;
+  name: string;
+  image: string;
+  dataAiHint: string;
+}
+
+export type ContactPerson = {
+  name: string;
+  phone: string;
+  email: string;
+  address: string;  
+}
