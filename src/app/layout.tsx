@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "AutoShowcase",
+  title: "Daihatsu Automotive",
   description: "Your premier destination for the finest cars.",
 };
 
@@ -27,14 +27,8 @@ export default function RootLayout({
           rel="stylesheet"
         ></link>
       </head>
-      <body
-        className={cn(
-          "min-h-screen bg-background font-body antialiased",
-        )}
-      >
-        <div className="relative flex min-h-screen flex-col">
-          {children}
-        </div>
+      <body className={cn("min-h-screen bg-background font-body antialiased")}>
+        <div className="relative flex min-h-screen flex-col">{children}</div>
         <Toaster />
       </body>
     </html>
