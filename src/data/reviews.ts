@@ -32,7 +32,7 @@ export const reviews: Review[] = [
     rating: 4,
     comment:
       "Keluarga saya sangat menyukai SUV Rocky baru kami. Luas, nyaman, dan pengendaliannya luar biasa. Satu-satunya kekurangannya adalah konsumsi bahan bakarnya yang irit, tapi itu wajar untuk mesin V8.",
-    image: "https://i.imgur.com/7US1Sly.png",
+    image: "https://i.imgur.com/pxxR7wz.png",
     dataAiHint: "family suv",
   },
   {
@@ -42,7 +42,7 @@ export const reviews: Review[] = [
     rating: 5,
     comment:
       "Beralih ke All New Sigra adalah keputusan terbaik! Mobil ini luar biasa cepat, senyap, dan saya senang tidak perlu membayar lebih. Pak Andri sangat membantu dan profesional.",
-    image: "https://i.imgur.com/7US1Sly.png",
+    image: "https://i.imgur.com/wITJABK.png",
     dataAiHint: "electric vehicle",
   },
 ];

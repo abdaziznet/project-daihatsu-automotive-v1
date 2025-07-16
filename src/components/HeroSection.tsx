@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { contact } from "@/data/cars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { Download } from "lucide-react";
 
 interface HeroSectionProps {
   car: Car;
@@ -53,6 +54,15 @@ export default function HeroSection({ car }: HeroSectionProps) {
     )}`;
     window.open(url, "_blank");
   }, [car.name, selectedVariant]);
+
+  const handleDownloadClick = () => {
+    const link = document.createElement("a");
+    link.href = "/daftar-harga.pdf"; // path ke file di public/
+    link.download = "daftar-harga.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   //console.log("Selected variant:", selectedVariant);
   return (
@@ -140,14 +150,25 @@ export default function HeroSection({ car }: HeroSectionProps) {
                     </ul>
                   </CardContent>
                 </Card>
-                <Button
-                  size="lg"
-                  className="mt-8 w-full sm:w-auto flex items-center text-lg bg-green-500 hover:bg-green-600"
-                  onClick={handleWhatsAppClick}
-                >
-                  <FontAwesomeIcon icon={faWhatsapp} className="!w-8 !h-8" />
-                  <span>Dapatkan Penawaran</span>
-                </Button>
+                <div className="flex flex-row flex-wrap gap-4 mt-8 justify-center">
+                  <Button
+                    size="lg"
+                    className="w-full sm:w-auto flex items-center text-lg bg-green-500 hover:bg-green-600"
+                    onClick={handleWhatsAppClick}
+                  >
+                    <FontAwesomeIcon icon={faWhatsapp} className="!w-8 !h-8" />
+                    <span className="ml-2">Dapatkan Penawaran</span>
+                  </Button>
+
+                  <Button
+                    size="lg"
+                    className="w-full sm:w-auto flex items-center text-lg"
+                    onClick={handleDownloadClick}
+                  >
+                    <Download className="!w-8 !h-8 mr-2" />
+                    <span>Download List Harga</span>
+                  </Button>
+                </div>
               </motion.div>
             )}
           </AnimatePresence>
