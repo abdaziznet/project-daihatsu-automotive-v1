@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AnimatePresence, motion } from "framer-motion";
 import { contact } from "@/data/cars";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 interface HeroSectionProps {
   car: Car;
@@ -136,10 +138,11 @@ export default function HeroSection({ car }: HeroSectionProps) {
                 </Card>
                 <Button
                   size="lg"
-                  className="mt-8 w-full sm:w-auto"
+                  className="mt-8 w-full sm:w-auto flex items-center text-lg"
                   onClick={handleWhatsAppClick}
                 >
-                  Dapatkan Penawaran
+                  <FontAwesomeIcon icon={faWhatsapp} className="!w-8 !h-8" />
+                  <span>Dapatkan Penawaran</span>
                 </Button>
               </motion.div>
             )}

@@ -20,7 +20,8 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/images/daihatsu-automotive-logo.png";
 import { contact } from "@/data/cars";
-import { T } from "@genkit-ai/googleai";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp, faTiktok } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -123,7 +124,8 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm hover:underline"
                 >
-                  <Phone className="h-4 w-4" />
+                  {/* <Phone className="h-4 w-4" /> */}
+                  <FontAwesomeIcon icon={faWhatsapp} className="!h-5 !w-5" />
                   <span>{contact.phone}</span>
                 </a>
               </li>
@@ -154,7 +156,8 @@ export default function Footer() {
                 prefetch={false}
                 aria-label="Tiktok"
               >
-                <Twitter className="h-6 w-6" />
+                <FontAwesomeIcon icon={faTiktok} className="!h-5 !w-5" />
+                {/* <Twitter className="h-6 w-6" /> */}
               </Link>
               <Link
                 href="https://www.instagram.com/daihatsu_automotive/"

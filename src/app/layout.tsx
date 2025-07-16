@@ -3,6 +3,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/next";
+import "../lib/font-awesome"; // import config
 
 export const metadata: Metadata = {
   title: "Daihatsu Automotive",
