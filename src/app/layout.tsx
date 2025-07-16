@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Daihatsu Automotive",
@@ -28,7 +29,10 @@ export default function RootLayout({
         ></link>
       </head>
       <body className={cn("min-h-screen bg-background font-body antialiased")}>
-        <div className="relative flex min-h-screen flex-col">{children}</div>
+        <div className="relative flex min-h-screen flex-col">
+          {children}
+          <Analytics />
+        </div>
         <Toaster />
       </body>
     </html>

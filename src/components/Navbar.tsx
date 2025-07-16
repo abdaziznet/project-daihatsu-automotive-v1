@@ -7,6 +7,11 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
 import Image from "next/image";
 import logo from "@/assets/images/daihatsu-logo.svg";
+// import {
+//   Popover,
+//   PopoverContent,
+//   PopoverTrigger,
+// } from "@/components/ui/popover";
 
 const navLinks = [
   { href: "#top-of-page", label: "Home" },
