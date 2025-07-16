@@ -22,9 +22,9 @@ interface CarCarouselProps {
 
 export default function CarCarousel({ images }: CarCarouselProps) {
   return (
-    <section className="w-full">
+    <section className="w-full flex justify-center">
       <Carousel
-        className="w-full"
+        className="w-full max-w-[1200px]"
         opts={{ loop: true }}
         plugins={[
           Autoplay({
@@ -36,7 +36,7 @@ export default function CarCarousel({ images }: CarCarouselProps) {
         <CarouselContent>
           {images.map((img, index) => (
             <CarouselItem key={index}>
-              <div className="relative h-[400px] md:h-[500px] lg:h-[800px] w-full">
+              <div className="relative w-full h-[600px] rounded-lg overflow-hidden shadow-xl">
                 <Image
                   src={img.image}
                   alt={`Promotional image of ${img.name}`}
@@ -45,15 +45,15 @@ export default function CarCarousel({ images }: CarCarouselProps) {
                   priority={index === 0}
                   data-ai-hint={img.dataAiHint}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-8 md:p-12">
-                  <h2 className="text-3xl md:text-5xl font-bold text-white shadow-lg font-headline">
+                  <h2 className="text-2xl md:text-4xl font-bold text-white shadow-lg font-headline">
                     Temukan yang baru "{img.name}"
                   </h2>
                   <p className="text-lg text-white/90 mt-2 max-w-lg">
                     Rasakan performa dan kemewahan yang tak tertandingi
                   </p>
-                </div>
+                </div> */}
               </div>
             </CarouselItem>
           ))}

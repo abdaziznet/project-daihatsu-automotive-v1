@@ -10,20 +10,27 @@ import all_new_xenia from "@/assets/images/all-new-xenia.png";
 import luxio from "@/assets/images/luxio.png";
 import minibus from "@/assets/images/minibus.png";
 import rocky from "@/assets/images/rocky.png";
+import banner_3 from "@/assets/images/banner_3.png";
 
 
 export const bannerImages: BannerImage[] = [
   {
     id:1,
-    name: "New Terios",
+    name: "Banner 1",
     image: `${banner_1.src}`,
     dataAiHint: "sports car",
   },
   {
     id:2,
-    name: "New Terios",
+    name: "Banner 2",
     image: `${banner_2.src}`,
     dataAiHint: "sports car",
+  },
+  {
+    id:3,
+    name: "Banner 3",
+    image: `${banner_3.src}`,
+    dataAiHint: "promo",
   }
   
 ]
