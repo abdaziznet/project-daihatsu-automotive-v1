@@ -124,12 +124,16 @@ export default function HeroSection({ car }: HeroSectionProps) {
                         ([key, value]) => (
                           <li
                             key={key}
-                            className="flex justify-between border-b pb-2 last:border-b-0"
+                            className="flex flex-col sm:flex-row sm:justify-between border-b pb-2 last:border-b-0"
                           >
-                            <span className="capitalize text-muted-foreground">
-                              {key.replace(/([A-Z])/g, " $1")}
+                            <span className="capitalize text-muted-foreground sm:w-1/2s">
+                              {key
+                                .replace(/_/g, " ")
+                                .replace(/([A-Z])/g, " $1")}
                             </span>
-                            <span className="font-semibold">{value}</span>
+                            <span className="font-semibold sm:text-right break-words sm:max-w-[50%]">
+                              {value}
+                            </span>
                           </li>
                         )
                       )}
@@ -138,7 +142,7 @@ export default function HeroSection({ car }: HeroSectionProps) {
                 </Card>
                 <Button
                   size="lg"
-                  className="mt-8 w-full sm:w-auto flex items-center text-lg"
+                  className="mt-8 w-full sm:w-auto flex items-center text-lg bg-green-500 hover:bg-green-600"
                   onClick={handleWhatsAppClick}
                 >
                   <FontAwesomeIcon icon={faWhatsapp} className="!w-8 !h-8" />

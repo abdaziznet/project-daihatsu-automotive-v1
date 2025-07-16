@@ -36,7 +36,7 @@ export default function CarCarousel({ images }: CarCarouselProps) {
         <CarouselContent>
           {images.map((img, index) => (
             <CarouselItem key={index}>
-              <div className="relative w-full h-[600px] rounded-lg overflow-hidden shadow-xl">
+              <div className="relative w-full h-[300px] md:h-[400px] lg:h-[600px] rounded-lg overflow-hidden shadow-xl">
                 <Image
                   src={img.image}
                   alt={`Promotional image of ${img.name}`}
