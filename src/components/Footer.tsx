@@ -28,15 +28,17 @@ export default function Footer() {
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto max-w-7xl px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="flex flex-col">
+          <div className="flex flex-col items-center">
             <Link
               href="#"
               className="flex items-center gap-2 mb-4"
               prefetch={false}
             >
               <Image
-                src={logo}
+                src="https://i.imgur.com/HaSMxWd.png"
                 alt="Daihatsu Automotive Logo"
+                width={200}
+                height={100}
                 className="h-30 w-auto"
               />
               {/* <Car className="h-8 w-8" />

@@ -6,8 +6,39 @@ import { Analytics } from "@vercel/analytics/next";
 import "../lib/font-awesome"; // import config
 
 export const metadata: Metadata = {
-  title: "Daihatsu Automotive",
-  description: "Your premier destination for the finest cars.",
+  title: "Daihatsu 2025 | Harga, Promo & Spesifikasi Mobil Terbaru",
+  description:
+    "Temukan harga dan promo mobil Daihatsu 2025 terbaru. Banyak pilihan mobil keluarga, hemat BBM, dan cocok untuk perjalanan jauh.",
+  keywords: [
+    "mobil daihatsu 2025",
+    "harga mobil daihatsu",
+    "promo mobil baru",
+    "mobil keluarga",
+    "mobil irit",
+  ],
+  openGraph: {
+    title: "Daihatsu 2025",
+    description: "Lihat katalog lengkap mobil Daihatsu terbaru 2025.",
+    url: "https://www.daihatsuautomotive.com",
+    siteName: "Daihatsu Catalog",
+    images: [
+      {
+        url: "https://www.daihatsuautomotive.com/og-image.png", // Ganti dengan gambar OG kamu
+        width: 1200,
+        height: 630,
+        alt: "Gambar Mobil Daihatsu 2025",
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://www.daihatsuautomotive.com",
+  },
 };
 
 export default function RootLayout({

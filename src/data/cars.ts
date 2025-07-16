@@ -20,37 +20,37 @@ export const bannerImages: BannerImage[] = [
   {
     id: 1,
     name: "Banner 1",
-    image: `${banner_1.src}`,
+    image: "https://i.imgur.com/XS1mdI8.png",
     dataAiHint: "sports car",
   },
   {
     id: 2,
     name: "Banner 2",
-    image: `${banner_2.src}`,
+    image: "https://i.imgur.com/x3K1KZf.png",
     dataAiHint: "sports car",
   },
   {
     id: 3,
     name: "Banner 3",
-    image: `${banner_3.src}`,
+    image: "https://i.imgur.com/urbdcR9.png",
     dataAiHint: "promo",
   },
   {
     id: 4,
     name: "Banner 4",
-    image: `${banner_4.src}`,
+    image: "https://i.imgur.com/31YCAnI.png",
     dataAiHint: "promo",
   },
   {
     id: 5,
     name: "Banner 5",
-    image: `${banner_5.src}`,
+    image: "https://i.imgur.com/oeNgBUY.png",
     dataAiHint: "promo",
   },
   {
     id: 6,
     name: "Banner 6",
-    image: `${banner_6.src}`,
+    image: "https://i.imgur.com/gN2UE8z.png",
     dataAiHint: "promo",
   },
 ];
@@ -66,7 +66,7 @@ export const cars: Car[] = [
   {
     id: "1",
     name: "New Sigra",
-    image: `${all_new_sigra.src}`,
+    image: "https://i.imgur.com/fPAgUdx.png",
     startingPrice: "Rp. 141.700.000",
     dataAiHint: "New Sigra",
     variants: [
@@ -82,7 +82,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Efisien & Irit BBM, AC Single Blower, Electric Power Steering",
         },
-        image: `${all_new_sigra.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/fPAgUdx.png", // Closing bracket for specs
       },
       {
         type: "SIGRA 1.0 M MT MC",
@@ -96,7 +96,7 @@ export const cars: Car[] = [
           fitur_utama:
             "LED headlamp smoked, Rear wiper & shark-fin antenna, Rear air circulator, 2DIN audio + rear speaker, Immobilizer + alarm + remote, Parking sensor belakang",
         },
-        image: `${all_new_sigra.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/fPAgUdx.png", // Closing bracket for specs
       },
       {
         type: "SIGRA 1.2 X MT MC",
@@ -110,7 +110,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Rem depan cakram, belakang tromol, Suspensi MacPherson Strut & Torsion Beam, Power Steering elektrik, Ban 175/65 R14",
         },
-        image: `${all_new_sigra.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/fPAgUdx.png", // Closing bracket for specs
       },
       {
         type: "SIGRA 1.2 X MT DLX MC",
@@ -124,7 +124,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Rem depan cakram, belakang tromol, Suspensi MacPherson Strut & Torsion Beam, Power Steering elektrik, Ban 175/65 R14",
         },
-        image: `${all_new_sigra.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/fPAgUdx.png", // Closing bracket for specs
       },
       {
         type: "SIGRA 1.2 X AT MC",
@@ -138,7 +138,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Rem depan cakram, belakang tromol, Suspensi MacPherson Strut & Torsion Beam, Power Steering elektrik, Ban 175/65 R14",
         },
-        image: `${all_new_sigra.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/fPAgUdx.png", // Closing bracket for specs
       },
       {
         type: "SIGRA 1.2 X AT DLX MC",
@@ -152,7 +152,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Rem depan cakram, belakang tromol, Suspensi MacPherson Strut & Torsion Beam, Power Steering elektrik, Ban 175/65 R14",
         },
-        image: `${all_new_sigra.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/fPAgUdx.png", // Closing bracket for specs
       },
       {
         type: "SIGRA 1.2 R MT MC",
@@ -166,7 +166,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Rem depan cakram, belakang tromol, Suspensi MacPherson Strut & Torsion Beam, Power Steering elektrik, Ban 175/65 R14",
         },
-        image: `${all_new_sigra.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/fPAgUdx.png", // Closing bracket for specs
       },
       {
         type: "SIGRA 1.2 R MT DLX MC",
@@ -180,7 +180,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Rem depan cakram, belakang tromol, Suspensi MacPherson Strut & Torsion Beam, Power Steering elektrik, Ban 175/65 R14",
         },
-        image: `${all_new_sigra.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/fPAgUdx.png", // Closing bracket for specs
       },
       {
         type: "SIGRA 1.2 R AT MC",
@@ -194,7 +194,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Rem depan cakram, belakang tromol, Suspensi MacPherson Strut & Torsion Beam, Power Steering elektrik, Ban 175/65 R14",
         },
-        image: `${all_new_sigra.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/fPAgUdx.png", // Closing bracket for specs
       },
       {
         type: "SIGRA 1.2 R AT DLX MC",
@@ -208,14 +208,14 @@ export const cars: Car[] = [
           fitur_utama:
             "Rem depan cakram, belakang tromol, Suspensi MacPherson Strut & Torsion Beam, Power Steering elektrik, Ban 175/65 R14",
         },
-        image: `${all_new_sigra.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/fPAgUdx.png", // Closing bracket for specs
       },
     ],
   },
   {
     id: "2",
     name: "Gran Max Pick Up",
-    image: `${gran_max_pickup.src}`,
+    image: "https://i.imgur.com/uPOaDL1.png",
     startingPrice: "Rp. 163.550.000",
     dataAiHint: "Gran Max Pick Up",
     variants: [
@@ -231,7 +231,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, Disc Cakram Depan, Suspensi MacPherson & Leaf Spring, Wheel Cover, EPS",
         },
-        image: `${gran_max_pickup.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/uPOaDL1.png", // Closing bracket for specs
       },
       {
         type: "GRAN MAX PU BOX 1.3 PT FH E4",
@@ -245,7 +245,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, Disc Cakram Depan, Suspensi MacPherson & Leaf Spring, Wheel Cover, EPS",
         },
-        image: `${gran_max_pickup.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/uPOaDL1.png", // Closing bracket for specs
       },
       {
         type: "GRAN MAX PU BOX 1.3 ALUMINUM PT FH E4",
@@ -259,7 +259,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, Disc Cakram Depan, Suspensi MacPherson & Leaf Spring, Wheel Cover, EPS",
         },
-        image: `${gran_max_pickup.src}`,
+        image: "https://i.imgur.com/uPOaDL1.png",
       },
       {
         type: "GRAN MAX PU BOX 1.3 3W FH E4",
@@ -273,7 +273,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, Disc Cakram Depan, Suspensi MacPherson & Leaf Spring, Wheel Cover, EPS",
         },
-        image: `${gran_max_pickup.src}`,
+        image: "https://i.imgur.com/uPOaDL1.png",
       },
       {
         type: "GRAN MAX PU BOX 1.3 3W PT FH E4",
@@ -287,7 +287,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, Disc Cakram Depan, Suspensi MacPherson & Leaf Spring, Wheel Cover, EPS",
         },
-        image: `${gran_max_pickup.src}`,
+        image: "https://i.imgur.com/uPOaDL1.png",
       },
       {
         type: "GRAN MAX PU BOX 1.3 3W ALUMINUM FH E4",
@@ -301,7 +301,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, Disc Cakram Depan, Suspensi MacPherson & Leaf Spring, Wheel Cover, EPS",
         },
-        image: `${gran_max_pickup.src}`,
+        image: "https://i.imgur.com/uPOaDL1.png",
       },
       {
         type: "GRAN MAX PU 1.3 STD GL E4",
@@ -315,7 +315,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, Disc Cakram Depan, Suspensi MacPherson & Leaf Spring, Wheel Cover, EPS",
         },
-        image: `${gran_max_pickup.src}`,
+        image: "https://i.imgur.com/uPOaDL1.png",
       },
       {
         type: "GRAN MAX PU BOX 1.3 PT GL E4",
@@ -329,7 +329,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, Disc Cakram Depan, Suspensi MacPherson & Leaf Spring, Wheel Cover, EPS",
         },
-        image: `${gran_max_pickup.src}`,
+        image: "https://i.imgur.com/uPOaDL1.png",
       },
       {
         type: "GRAN MAX PU BOX 1.3 ALUMINUM PT GL E4",
@@ -343,7 +343,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, Disc Cakram Depan, Suspensi MacPherson & Leaf Spring, Wheel Cover, EPS",
         },
-        image: `${gran_max_pickup.src}`,
+        image: "https://i.imgur.com/uPOaDL1.png",
       },
       {
         type: "GRAN MAX PU 1.5 STD MC",
@@ -357,7 +357,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, Disc Cakram Depan, Suspensi MacPherson & Leaf Spring, Wheel Cover, EPS",
         },
-        image: `${gran_max_pickup.src}`,
+        image: "https://i.imgur.com/uPOaDL1.png",
       },
       {
         type: "GRAN MAX PU BOX 1.5 PT MC",
@@ -371,7 +371,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, Disc Cakram Depan, Suspensi MacPherson & Leaf Spring, Wheel Cover, EPS",
         },
-        image: `${gran_max_pickup.src}`,
+        image: "https://i.imgur.com/uPOaDL1.png",
       },
       {
         type: "GRAN MAX PU BOX 1.5 ALUMINUM PT MC",
@@ -385,14 +385,14 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, Disc Cakram Depan, Suspensi MacPherson & Leaf Spring, Wheel Cover, EPS",
         },
-        image: `${gran_max_pickup.src}`,
+        image: "https://i.imgur.com/uPOaDL1.png",
       },
     ],
   },
   {
     id: "3",
     name: "New Terios",
-    image: `${all_new_terios.src}`,
+    image: "https://i.imgur.com/pb6sWfT.png",
     startingPrice: "Rp. 248.050.000",
     dataAiHint: "sports car",
     variants: [
@@ -408,7 +408,7 @@ export const cars: Car[] = [
           fitur_utama:
             "LED Headlamp, Power Steering elektrik, 2DIN 7inc touchscreen, Double blower AC, Alloy Wheel 16",
         },
-        image: `${all_new_terios.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/pb6sWfT.png", // Closing bracket for specs
       },
       {
         type: "NEW TERIOS X MT ADS MC",
@@ -422,7 +422,7 @@ export const cars: Car[] = [
           fitur_utama:
             "LED Headlamp, Power Steering elektrik, 2DIN 7inc touchscreen, Double blower AC, Alloy Wheel 16",
         },
-        image: `${all_new_terios.src}`,
+        image: "https://i.imgur.com/pb6sWfT.png",
       },
       {
         type: "NEW TERIOS X AT MC",
@@ -436,7 +436,7 @@ export const cars: Car[] = [
           fitur_utama:
             "LED Headlamp, Power Steering elektrik, 2DIN 7inc touchscreen, Double blower AC, Alloy Wheel 16",
         },
-        image: `${all_new_terios.src}`,
+        image: "https://i.imgur.com/pb6sWfT.png",
       },
       {
         type: "NEW TERIOS X AT ADS MC",
@@ -450,7 +450,7 @@ export const cars: Car[] = [
           fitur_utama:
             "LED Headlamp, Power Steering elektrik, 2DIN 7inc touchscreen, Double blower AC, Alloy Wheel 16",
         },
-        image: `${all_new_terios.src}`,
+        image: "https://i.imgur.com/pb6sWfT.png",
       },
       {
         type: "NEW TERIOS R MT MC",
@@ -464,7 +464,7 @@ export const cars: Car[] = [
           fitur_utama:
             "LED Headlamp, Power Steering elektrik, 2DIN 7inc touchscreen, Double blower AC, Alloy Wheel 16",
         },
-        image: `${all_new_terios.src}`,
+        image: "https://i.imgur.com/pb6sWfT.png",
       },
       {
         type: "NEW TERIOS R MT ADS MC",
@@ -478,7 +478,7 @@ export const cars: Car[] = [
           fitur_utama:
             "LED Headlamp, Power Steering elektrik, 2DIN 7inc touchscreen, Double blower AC, Alloy Wheel 16",
         },
-        image: `${all_new_terios.src}`,
+        image: "https://i.imgur.com/pb6sWfT.png",
       },
       {
         type: "NEW TERIOS R AT MC",
@@ -492,7 +492,7 @@ export const cars: Car[] = [
           fitur_utama:
             "LED Headlamp, Power Steering elektrik, 2DIN 7inc touchscreen, Double blower AC, Alloy Wheel 16",
         },
-        image: `${all_new_terios.src}`,
+        image: "https://i.imgur.com/pb6sWfT.png",
       },
       {
         type: "NEW TERIOS R AT ADS MC",
@@ -506,7 +506,7 @@ export const cars: Car[] = [
           fitur_utama:
             "LED Headlamp, Power Steering elektrik, 2DIN 7inc touchscreen, Double blower AC, Alloy Wheel 16",
         },
-        image: `${all_new_terios.src}`,
+        image: "https://i.imgur.com/pb6sWfT.png",
       },
       {
         type: "NEW TERIOS R MT CUSTOM MC",
@@ -520,7 +520,7 @@ export const cars: Car[] = [
           fitur_utama:
             "LED Headlamp, Power Steering elektrik, 2DIN 7inc touchscreen, Double blower AC, Alloy Wheel 16",
         },
-        image: `${all_new_terios.src}`,
+        image: "https://i.imgur.com/pb6sWfT.png",
       },
       {
         type: "NEW TERIOS R AT CUSTOM MC",
@@ -534,14 +534,14 @@ export const cars: Car[] = [
           fitur_utama:
             "LED Headlamp, Power Steering elektrik, 2DIN 7inc touchscreen, Double blower AC, Alloy Wheel 16",
         },
-        image: `${all_new_terios.src}`,
+        image: "https://i.imgur.com/pb6sWfT.png",
       },
     ],
   },
   {
     id: "4",
     name: "All New Ayla",
-    image: `${all_new_ayla.src}`,
+    image: "https://i.imgur.com/lBguEW5.png",
     startingPrice: "Rp. 140.300.000",
     dataAiHint: "sports car",
     variants: [
@@ -557,7 +557,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Dual SRS Airbag, Power Window 4 pintu, AC, Power Steering, Charger, Rem Cakram Depan & Tromol Belakang",
         },
-        image: `${all_new_ayla.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/lBguEW5.png", // Closing bracket for specs
       },
       {
         type: "AYLA 1.0 X MT",
@@ -571,7 +571,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Dual SRS Airbag, Power Window 4 pintu, AC, Power Steering, Charger, Rem Cakram Depan & Tromol Belakang",
         },
-        image: `${all_new_ayla.src}`,
+        image: "https://i.imgur.com/lBguEW5.png",
       },
       {
         type: "AYLA 1.0 X MT ADS",
@@ -585,7 +585,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Dual SRS Airbag, Power Window 4 pintu, AC, Power Steering, Charger, Rem Cakram Depan & Tromol Belakang",
         },
-        image: `${all_new_ayla.src}`,
+        image: "https://i.imgur.com/lBguEW5.png",
       },
       {
         type: "AYLA 1.0 X CVT",
@@ -599,7 +599,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Dual SRS Airbag, Power Window 4 pintu, AC, Power Steering, Charger, Rem Cakram Depan & Tromol Belakang",
         },
-        image: `${all_new_ayla.src}`,
+        image: "https://i.imgur.com/lBguEW5.png",
       },
       {
         type: "AYLA 1.0 X CVT ADS",
@@ -613,7 +613,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Dual SRS Airbag, Power Window 4 pintu, AC, Power Steering, Charger, Rem Cakram Depan & Tromol Belakang",
         },
-        image: `${all_new_ayla.src}`,
+        image: "https://i.imgur.com/lBguEW5.png",
       },
       {
         type: "AYLA 1.2 R MT",
@@ -627,7 +627,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Dual SRS Airbag, Power Window 4 pintu, AC, Power Steering, Charger, Rem Cakram Depan & Tromol Belakang",
         },
-        image: `${all_new_ayla.src}`,
+        image: "https://i.imgur.com/lBguEW5.png",
       },
       {
         type: "AYLA 1.2 R MT ADS",
@@ -641,7 +641,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Dual SRS Airbag, Power Window 4 pintu, AC, Power Steering, Charger, Rem Cakram Depan & Tromol Belakang",
         },
-        image: `${all_new_ayla.src}`,
+        image: "https://i.imgur.com/lBguEW5.png",
       },
       {
         type: "AYLA 1.2 R CVT",
@@ -655,7 +655,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Dual SRS Airbag, Power Window 4 pintu, AC, Power Steering, Charger, Rem Cakram Depan & Tromol Belakang",
         },
-        image: `${all_new_ayla.src}`,
+        image: "https://i.imgur.com/lBguEW5.png",
       },
       {
         type: "AYLA 1.2 R CVT ADS",
@@ -669,14 +669,14 @@ export const cars: Car[] = [
           fitur_utama:
             "Dual SRS Airbag, Power Window 4 pintu, AC, Power Steering, Charger, Rem Cakram Depan & Tromol Belakang",
         },
-        image: `${all_new_ayla.src}`,
+        image: "https://i.imgur.com/lBguEW5.png",
       },
     ],
   },
   {
     id: "5",
     name: "All New Xenia",
-    image: `${all_new_xenia.src}`,
+    image: "https://i.imgur.com/Fi3UNxw.png",
     startingPrice: "Rp. 227.950.000",
     dataAiHint: "sports car",
     variants: [
@@ -692,7 +692,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/Fi3UNxw.png", // Closing bracket for specs
       },
       {
         type: "XENIA 1.3 X MT",
@@ -706,7 +706,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.3 X CVT",
@@ -720,7 +720,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.3 R MT",
@@ -734,7 +734,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.3 R MT ADS",
@@ -748,7 +748,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.3 R MT ADS X",
@@ -762,7 +762,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.3 R MT ADS X TWO TONE",
@@ -776,7 +776,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.3 R MT SC",
@@ -790,7 +790,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.3 R MT SC ADS",
@@ -804,7 +804,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.3 R CVT",
@@ -818,7 +818,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.3 R CVT ADS",
@@ -832,7 +832,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.3 R CVT ADS X",
@@ -846,7 +846,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.3 R CVT ADS X TWO TONE",
@@ -860,7 +860,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.3 R CVT SC",
@@ -874,7 +874,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.3 R CVT SC ADS",
@@ -888,7 +888,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.5 R MT",
@@ -902,7 +902,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.5 R MT ADS",
@@ -916,7 +916,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.5 R MT SC",
@@ -930,7 +930,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.5 R MT SC ADS",
@@ -944,7 +944,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.5 R CVT",
@@ -958,7 +958,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.5 R CVT ADS",
@@ -972,7 +972,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.5 R CVT ADS X",
@@ -986,7 +986,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.5 R CVT ADS X TWO TONE",
@@ -1000,7 +1000,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.5 R CVT SC",
@@ -1014,7 +1014,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.5 R CVT SC ADS",
@@ -1028,7 +1028,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.5 R CVT ASA",
@@ -1042,7 +1042,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.5 R CVT ASA SC",
@@ -1056,7 +1056,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.5 R CVT ASA+",
@@ -1070,7 +1070,7 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
       {
         type: "XENIA 1.5 R CVT ASA+ SC",
@@ -1084,14 +1084,14 @@ export const cars: Car[] = [
           fitur_utama:
             'LED Headlamp, Electric Mirror, 7” touchscreen, Double blower AC, Dual SRS Airbag, Power Steering, 15" steel wheel + wheel cap',
         },
-        image: `${all_new_xenia.src}`,
+        image: "https://i.imgur.com/Fi3UNxw.png",
       },
     ],
   },
   {
     id: "6",
     name: "Gran Max Minibus",
-    image: `${minibus.src}`,
+    image: "https://i.imgur.com/beH8M9p.png",
     startingPrice: "Rp. 176.900.000",
     dataAiHint: "sports car",
     variants: [
@@ -1108,7 +1108,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, MacPherson Strut depan & leaf spring belakang, Disc cakram depan, Drum belakang, Wheel cover",
         },
-        image: `${minibus.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/beH8M9p.png", // Closing bracket for specs
       },
       {
         type: "BV 1.3 AC FH E4",
@@ -1123,7 +1123,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, MacPherson Strut depan & leaf spring belakang, Disc cakram depan, Drum belakang, Wheel cover",
         },
-        image: `${minibus.src}`,
+        image: "https://i.imgur.com/beH8M9p.png",
       },
       {
         type: "BV 1.3 AC AB E4",
@@ -1138,7 +1138,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, MacPherson Strut depan & leaf spring belakang, Disc cakram depan, Drum belakang, Wheel cover",
         },
-        image: `${minibus.src}`,
+        image: "https://i.imgur.com/beH8M9p.png",
       },
       {
         type: "BV 1.5 AC PS ABS MC",
@@ -1153,7 +1153,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, MacPherson Strut depan & leaf spring belakang, Disc cakram depan, Drum belakang, Wheel cover",
         },
-        image: `${minibus.src}`,
+        image: "https://i.imgur.com/beH8M9p.png",
       },
       {
         type: "MB 1.3 D FH E4",
@@ -1168,7 +1168,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, MacPherson Strut depan & leaf spring belakang, Disc cakram depan, Drum belakang, Wheel cover",
         },
-        image: `${minibus.src}`,
+        image: "https://i.imgur.com/beH8M9p.png",
       },
       {
         type: "MB 1.3 D AB E4",
@@ -1183,7 +1183,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, MacPherson Strut depan & leaf spring belakang, Disc cakram depan, Drum belakang, Wheel cover",
         },
-        image: `${minibus.src}`,
+        image: "https://i.imgur.com/beH8M9p.png",
       },
       {
         type: "MB 1.3 D FF FH E4",
@@ -1198,7 +1198,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, MacPherson Strut depan & leaf spring belakang, Disc cakram depan, Drum belakang, Wheel cover",
         },
-        image: `${minibus.src}`,
+        image: "https://i.imgur.com/beH8M9p.png",
       },
       {
         type: "MB 1.5 D PS MC",
@@ -1213,14 +1213,14 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, MacPherson Strut depan & leaf spring belakang, Disc cakram depan, Drum belakang, Wheel cover",
         },
-        image: `${minibus.src}`,
+        image: "https://i.imgur.com/beH8M9p.png",
       },
     ],
   },
   {
     id: "7",
     name: "Rocky",
-    image: `${rocky.src}`,
+    image: "https://i.imgur.com/vOQRGT8.png",
     startingPrice: "Rp. 214.250.000",
     dataAiHint: "sports car",
     variants: [
@@ -1236,7 +1236,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/vOQRGT8.png", // Closing bracket for specs
       },
       {
         type: "ROCKY 1.2 M MT SC",
@@ -1250,7 +1250,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.2 M CVT",
@@ -1264,7 +1264,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.2 M CVT SC",
@@ -1278,7 +1278,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.2 X MT",
@@ -1292,7 +1292,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.2 X MT ADS",
@@ -1306,7 +1306,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.2 X MT SC",
@@ -1320,7 +1320,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.2 X MT ADS SC",
@@ -1334,7 +1334,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.2 X CVT",
@@ -1348,7 +1348,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.2 X CVT ADS",
@@ -1362,7 +1362,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.2 X CVT SC",
@@ -1376,7 +1376,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.2 X CVT ADS SC",
@@ -1390,7 +1390,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC MT",
@@ -1404,7 +1404,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC MT SC",
@@ -1418,7 +1418,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC MT TWO TONE",
@@ -1432,7 +1432,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC MT TWO TONE SC",
@@ -1446,7 +1446,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC MT ADS",
@@ -1460,7 +1460,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC MT ADS SC",
@@ -1474,7 +1474,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC MT ADS TWO TONE",
@@ -1488,7 +1488,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC MT ADS TWO TONE SC",
@@ -1502,7 +1502,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC CVT",
@@ -1516,7 +1516,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC CVT SC",
@@ -1530,7 +1530,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC CVT TWO TONE",
@@ -1544,7 +1544,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC CVT TWO TONE SC",
@@ -1558,7 +1558,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC CVT ADS",
@@ -1572,7 +1572,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC CVT ADS SC",
@@ -1586,7 +1586,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC CVT ADS TWO TONE",
@@ -1600,7 +1600,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC CVT ADS TWO TONE SC",
@@ -1614,7 +1614,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC CVT ASA",
@@ -1628,7 +1628,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC CVT ASA SC",
@@ -1642,7 +1642,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC CVT ASA TWO TONE",
@@ -1656,7 +1656,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC CVT ASA TWO TONE SC",
@@ -1670,7 +1670,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
       {
         type: "ROCKY 1.0 R TC CVT ASA+ SC",
@@ -1684,14 +1684,14 @@ export const cars: Car[] = [
           fitur_utama:
             "Halogen headlamp, Power Steering elektrik, 7inc touchscreen, Dual SRS Airbag, ABS & EBD",
         },
-        image: `${rocky.src}`,
+        image: "https://i.imgur.com/vOQRGT8.png",
       },
     ],
   },
   {
     id: "8",
     name: "Luxio",
-    image: `${luxio.src}`,
+    image: "https://i.imgur.com/10eqeaj.png",
     startingPrice: "Rp. 240.750.000",
     dataAiHint: "sports car",
     variants: [
@@ -1707,7 +1707,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, Dual reflector headlamp, AC, Rear A/C vents",
         },
-        image: `${luxio.src}`, // Closing bracket for specs
+        image: "https://i.imgur.com/10eqeaj.png", // Closing bracket for specs
       },
       {
         type: "LUXIO 1.5 X M/T MC E4",
@@ -1721,7 +1721,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, Dual reflector headlamp, AC, Rear A/C vents",
         },
-        image: `${luxio.src}`,
+        image: "https://i.imgur.com/10eqeaj.png",
       },
       {
         type: "LUXIO 1.5 X A/T MC E4",
@@ -1735,7 +1735,7 @@ export const cars: Car[] = [
           fitur_utama:
             "Power Steering, Dual reflector headlamp, AC, Rear A/C vents",
         },
-        image: `${luxio.src}`,
+        image: "https://i.imgur.com/10eqeaj.png",
       },
     ],
   },
