@@ -43,7 +43,7 @@ export default function Navbar() {
               href={link.href}
               // className="text-sm font-medium hover:text-primary transition-colors"
               className="block py-2 px-4 text-gray-800 rounded-md 
-                         hover:bg-blue-500 hover:text-white 
+                         hover:bg-primary hover:text-white 
                          transition-colors duration-300 ease-in-out"
               prefetch={false}
               onClick={(e) => {

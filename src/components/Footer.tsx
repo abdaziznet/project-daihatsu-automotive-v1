@@ -14,6 +14,7 @@ import {
   InfoIcon,
   ListIcon,
   StarIcon,
+  Youtube,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -41,7 +42,7 @@ export default function Footer() {
               <span className="text-2xl font-bold">AutoShowcase</span> */}
             </Link>
             <p className="text-sm text-primary-foreground/80">
-              Cara terbaik untuk menemukan mobil impian Anda berikutnya
+              Cara terbaik untuk menemukan mobil impian anda berikutnya
             </p>
           </div>
           <div>
@@ -164,6 +165,16 @@ export default function Footer() {
                 aria-label="Instagram"
               >
                 <Instagram className="h-6 w-6" />
+              </Link>
+              <Link
+                href="https://www.youtube.com/@daihatsu_automotive"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-foreground/80 hover:text-white transition-colors"
+                prefetch={false}
+                aria-label="Youtube"
+              >
+                <Youtube className="h-6 w-6" />
               </Link>
             </div>
           </div>

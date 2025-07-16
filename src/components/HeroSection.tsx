@@ -2,10 +2,11 @@
 
 import Image from "next/image";
 import type { Car } from "@/lib/types";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AnimatePresence, motion } from "framer-motion";
+import { contact } from "@/data/cars";
 
 interface HeroSectionProps {
   car: Car;
@@ -30,6 +31,26 @@ export default function HeroSection({ car }: HeroSectionProps) {
       setSelectedVariant(selected);
     }
   };
+
+  const handleWhatsAppClick = useCallback(() => {
+    if (!selectedVariant) return;
+
+    // rakit pesan: nama mobil, tipe, harga
+    const text = [
+      "Halo, saya tertarik dengan penawaran berikut:",
+      `• Mobil : ${car.name}`,
+      `• Tipe   : ${selectedVariant.type}`,
+      `• Harga  : ${selectedVariant.price}`,
+      "",
+      "Mohon informasinya lebih lanjut, terima kasih.",
+    ].join("\n");
+
+    // encode & buka di tab baru
+    const url = `https://wa.me/${contact.phone}?text=${encodeURIComponent(
+      text
+    )}`;
+    window.open(url, "_blank");
+  }, [car.name, selectedVariant]);
 
   //console.log("Selected variant:", selectedVariant);
   return (
@@ -113,7 +134,11 @@ export default function HeroSection({ car }: HeroSectionProps) {
                     </ul>
                   </CardContent>
                 </Card>
-                <Button size="lg" className="mt-8 w-full sm:w-auto">
+                <Button
+                  size="lg"
+                  className="mt-8 w-full sm:w-auto"
+                  onClick={handleWhatsAppClick}
+                >
                   Dapatkan Penawaran
                 </Button>
               </motion.div>
