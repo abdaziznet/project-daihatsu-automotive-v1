@@ -43,7 +43,7 @@ export default function HeroSection({ car }: HeroSectionProps) {
       "Halo, saya tertarik dengan penawaran berikut:",
       `• Mobil : ${car.name}`,
       `• Tipe   : ${selectedVariant.type}`,
-      `• Harga  : ${selectedVariant.price}`,
+      // `• Harga  : ${selectedVariant.price}`,
       "",
       "Mohon informasinya lebih lanjut, terima kasih.",
     ].join("\n");
@@ -55,14 +55,33 @@ export default function HeroSection({ car }: HeroSectionProps) {
     window.open(url, "_blank");
   }, [car.name, selectedVariant]);
 
-  const handleDownloadClick = () => {
-    const link = document.createElement("a");
-    link.href = "/daftar-harga.pdf"; // path ke file di public/
-    link.download = "daftar-harga.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const handleDownloadClick = () => {
+  //   const link = document.createElement("a");
+  //   link.href = "/daftar-harga.pdf"; // path ke file di public/
+  //   link.download = "daftar-harga.pdf";
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
+
+  const handleBrosurClick = useCallback(() => {
+    if (!selectedVariant) return;
+
+    // rakit pesan: nama mobil, tipe, harga
+    const text = [
+      "Halo, saya ingin mendapatkan brosur dan daftar harga untuk mobil berikut:",
+      `• Mobil : ${car.name}`,
+      `• Tipe   : ${selectedVariant.type}`,
+      "",
+      "Mohon informasinya lebih lanjut, terima kasih.",
+    ].join("\n");
+
+    // encode & buka di tab baru
+    const url = `https://wa.me/${contact.phone}?text=${encodeURIComponent(
+      text
+    )}`;
+    window.open(url, "_blank");
+  }, [car.name, selectedVariant]);
 
   //console.log("Selected variant:", selectedVariant);
   return (
@@ -150,23 +169,23 @@ export default function HeroSection({ car }: HeroSectionProps) {
                     </ul>
                   </CardContent>
                 </Card>
-                <div className="flex flex-row flex-wrap gap-4 mt-8 justify-center">
+                <div className="flex flex-row flex-wrap gap-3 mt-5 justify-center">
                   <Button
                     size="lg"
                     className="w-full sm:w-auto flex items-center text-lg bg-green-500 hover:bg-green-600"
                     onClick={handleWhatsAppClick}
                   >
                     <FontAwesomeIcon icon={faWhatsapp} className="!w-8 !h-8" />
-                    <span className="ml-2">Dapatkan Penawaran</span>
+                    <span>Dapatkan Penawaran</span>
                   </Button>
 
                   <Button
                     size="lg"
                     className="w-full sm:w-auto flex items-center text-lg"
-                    onClick={handleDownloadClick}
+                    onClick={handleBrosurClick}
                   >
                     <Download className="!w-8 !h-8 mr-2" />
-                    <span>Download List Harga</span>
+                    <span>Download Brosur</span>
                   </Button>
                 </div>
               </motion.div>

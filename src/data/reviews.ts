@@ -7,7 +7,7 @@ import review_2 from "@/assets/images/review-2.png";
 export const reviews: Review[] = [
   {
     id: 1,
-    name: "Alex Johnson",
+    name: "Harun Masiku",
     avatar: "https://i.imgur.com/nVfo57Y.png",
     rating: 5,
     comment:
@@ -17,7 +17,7 @@ export const reviews: Review[] = [
   },
   {
     id: 2,
-    name: "Samantha Bee",
+    name: "Mulyono",
     avatar: "https://i.imgur.com/nVfo57Y.png",
     rating: 5,
     comment:
@@ -27,7 +27,7 @@ export const reviews: Review[] = [
   },
   {
     id: 3,
-    name: "Mike Chen",
+    name: "Megawati",
     avatar: "https://i.imgur.com/nVfo57Y.png",
     rating: 4,
     comment:
@@ -37,7 +37,7 @@ export const reviews: Review[] = [
   },
   {
     id: 4,
-    name: "Jessica Miller",
+    name: "Siti Mulyani",
     avatar: "https://i.imgur.com/nVfo57Y.png",
     rating: 5,
     comment:
