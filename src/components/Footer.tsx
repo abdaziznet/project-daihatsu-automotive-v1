@@ -22,6 +22,7 @@ import logo from "@/assets/images/daihatsu-automotive-logo.png";
 import { contact } from "@/data/cars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp, faTiktok } from "@fortawesome/free-brands-svg-icons";
+import VisitorStats from "./VisitorStats";
 
 export default function Footer() {
   return (
@@ -182,6 +183,8 @@ export default function Footer() {
                 <Youtube className="h-6 w-6" />
               </Link>
             </div>
+            <h3 className="text-lg font-semibold mt-6 mb-2">Visitor Counter</h3>
+            <VisitorStats />
           </div>
         </div>
         <div className="mt-8 border-t border-primary-foreground/20 pt-6 text-center text-sm text-primary-foreground/80">
