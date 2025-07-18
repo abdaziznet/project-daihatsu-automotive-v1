@@ -51,11 +51,11 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
               <li>
                 <Link
                   href="#top-of-page"
-                  className="flex items-center text-sm hover:underline gap-2"
+                  className="flex items-center hover:underline gap-2"
                   prefetch={false}
                 >
                   <HomeIcon className="h-4 w-4" />
@@ -65,7 +65,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#catalog"
-                  className="flex items-center text-sm hover:underline gap-2"
+                  className="flex items-center hover:underline gap-2"
                   prefetch={false}
                 >
                   <CarIcon className="h-4 w-4" />
@@ -75,7 +75,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#details"
-                  className="flex items-center text-sm hover:underline gap-2"
+                  className="flex items-center hover:underline gap-2"
                   prefetch={false}
                 >
                   <ListIcon className="h-4 w-4" />
@@ -85,7 +85,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#reviews"
-                  className="flex items-center text-sm hover:underline gap-2"
+                  className="flex items-center hover:underline gap-2"
                   prefetch={false}
                 >
                   <StarIcon className="h-4 w-4" />
@@ -95,7 +95,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#contact"
-                  className="flex items-center text-sm hover:underline gap-2"
+                  className="flex items-center hover:underline gap-2"
                   prefetch={false}
                 >
                   <ContactIcon className="h-4 w-4" />
@@ -104,6 +104,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3 text-sm">
