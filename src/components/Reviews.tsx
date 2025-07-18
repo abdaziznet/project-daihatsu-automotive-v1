@@ -48,7 +48,7 @@ export default function Reviews() {
                       <div className="flex items-start gap-4">
                         <Avatar>
                           <AvatarImage src={review.avatar} alt={review.name} />
-                          <AvatarFallback>
+                          <AvatarFallback className="bg-green-500 text-white">
                             {review.name.charAt(0)}
                           </AvatarFallback>
                         </Avatar>
@@ -63,14 +63,24 @@ export default function Reviews() {
                         </div>
                       </div>
                       {review.image && (
-                        <div className="mt-4 relative aspect-video w-full rounded-md overflow-hidden">
+                        // <div className="mt-4 relative aspect-video w-full rounded-md overflow-hidden">
+                        //   <Image
+                        //     src={review.image}
+                        //     alt={`Review image from ${review.name}`}
+                        //     fill
+                        //     className="object-cover"
+                        //     data-ai-hint={review.dataAiHint}
+                        //     sizes="(max-width: 768px) 100vw, 50vw"
+                        //   />
+                        // </div>
+                        <div className="mt-4 relative aspect-[3/2] w-full max-w-[600px] rounded-md overflow-hidden">
                           <Image
                             src={review.image}
                             alt={`Review image from ${review.name}`}
                             fill
                             className="object-cover"
                             data-ai-hint={review.dataAiHint}
-                            sizes="(max-width: 768px) 100vw, 50vw"
+                            sizes="(max-width: 768px) 100vw, 600px"
                           />
                         </div>
                       )}
