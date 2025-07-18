@@ -10,6 +10,7 @@ import { bannerImages, cars } from "@/data/cars";
 import type { Car } from "@/lib/types";
 import Reviews from "@/components/Reviews";
 import { generateProductSchema } from "@/lib/generateSchema";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 // 🔥 Tambahkan metadata di sini
 
@@ -31,6 +32,8 @@ export default function Home() {
           __html: JSON.stringify(generateProductSchema(cars)),
         }}
       />
+
+      <FloatingWhatsApp />
 
       {/* UI Website */}
       <div className="flex flex-col min-h-screen bg-background">
