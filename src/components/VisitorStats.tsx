@@ -22,7 +22,8 @@ export default function VisitorStats() {
   useEffect(() => {
     fetch("/api/visitor")
       .then((res) => res.json())
-      .then((data) => setStats(data));
+      .then((data) => setStats(data))
+      .catch(console.error);
   }, []);
 
   return (
