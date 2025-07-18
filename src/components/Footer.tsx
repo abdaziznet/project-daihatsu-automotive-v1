@@ -183,7 +183,7 @@ export default function Footer() {
                 <Youtube className="h-6 w-6" />
               </Link>
             </div>
-            <h3 className="text-lg font-semibold mt-6 mb-2">Pengunjung</h3>
+            <h3 className="text-lg font-semibold mt-6 mb-2">Visitors</h3>
             <VisitorStats />
           </div>
         </div>

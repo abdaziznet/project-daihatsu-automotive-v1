@@ -27,7 +27,7 @@ export default function VisitorStats() {
   }, []);
 
   return (
-    <div className="text-white text-sm text-left mt-4 space-y-1 bg-blue-900 p-4 rounded">
+    <div className="text-white text-sm text-left space-y-1 rounded">
       <div className="text-2xl flex space-x-1 justify-left">
         {String(stats.month)
           .padStart(4, "0")
