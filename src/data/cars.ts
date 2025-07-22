@@ -21,13 +21,13 @@ export const bannerImages: BannerImage[] = [
     id: 1,
     name: "Banner 1",
     image: "https://i.imgur.com/NxG9Hpt.png",
-    dataAiHint: "sports car",
+    dataAiHint: "Daihatsu Terios",
   },
   {
     id: 2,
     name: "Banner 2",
-    image: "https://i.imgur.com/x3K1KZf.png",
-    dataAiHint: "sports car",
+    image: "https://i.imgur.com/Eng2yyr.png",
+    dataAiHint: "Daihatsu Xenia",
   },
   {
     id: 3,
