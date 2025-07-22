@@ -42,7 +42,7 @@ export default function HeroSection({ car }: HeroSectionProps) {
       `• Nomor Whatsapp : ${form.phone}`,
       `• Mobil : ${car.name}`,
       `• Tipe  : ${selectedVariant?.type}`,
-      `• Harga : ${selectedVariant?.price}`,
+      // `• Harga : ${selectedVariant?.price}`,
       `• DP    : ${form.dp}`,
       `• Tenor : ${form.tenor}`,
       "",
