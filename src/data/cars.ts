@@ -19,39 +19,51 @@ import { max } from "date-fns";
 export const bannerImages: BannerImage[] = [
   {
     id: 1,
-    name: "Banner 1",
+    name: "Daihatsu Terios",
     image: "https://i.imgur.com/NxG9Hpt.png",
     dataAiHint: "Daihatsu Terios",
   },
   {
     id: 2,
-    name: "Banner 2",
+    name: "Daihatsu Xenia",
     image: "https://i.imgur.com/Eng2yyr.png",
     dataAiHint: "Daihatsu Xenia",
   },
   {
     id: 3,
-    name: "Banner 3",
+    name: "Daihatsu Sigra",
     image: "https://i.imgur.com/YcSvscl.png",
     dataAiHint: "Daihatsu Sigra",
   },
   {
     id: 4,
-    name: "Banner 4",
+    name: "Daihatsu Ayla",
     image: "https://i.imgur.com/TJxtK9s.png",
     dataAiHint: "Daihatsu Ayla",
   },
   {
     id: 5,
-    name: "Banner 5",
-    image: "https://i.imgur.com/oeNgBUY.png",
-    dataAiHint: "promo",
+    name: "Daihatsu Rocky",
+    image: "https://i.imgur.com/NCU8EMm.png",
+    dataAiHint: "Daihatsu Rocky",
   },
   {
     id: 6,
-    name: "Banner 6",
-    image: "https://i.imgur.com/gN2UE8z.png",
-    dataAiHint: "promo",
+    name: "Daihatsu Granmax Pickup",
+    image: "https://i.imgur.com/kSGXAy1.png",
+    dataAiHint: "Daihatsu Granmax Pickup",
+  },
+  {
+    id: 7,
+    name: "Daihatsu Granmax Minibus",
+    image: "https://i.imgur.com/Gfk7Ocr.png",
+    dataAiHint: "Daihatsu Granmax Minibus",
+  },
+  {
+    id: 7,
+    name: "Daihatsu Luxio",
+    image: "https://i.imgur.com/hI1RG0U.png",
+    dataAiHint: "Daihatsu Luxio",
   },
 ];
 

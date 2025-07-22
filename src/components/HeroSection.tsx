@@ -10,7 +10,6 @@ import { contact } from "@/data/cars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { Download } from "lucide-react";
-
 interface HeroSectionProps {
   car: Car;
 }
@@ -145,6 +144,7 @@ export default function HeroSection({ car }: HeroSectionProps) {
                     {selectedVariant.price}
                   </span>
                 </p>
+
                 <Card className="mt-6 bg-white/50 dark:bg-card">
                   <CardContent className="p-6">
                     <h3 className="text-xl font-bold mb-4">Spesifikasi</h3>
