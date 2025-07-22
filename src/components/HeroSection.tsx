@@ -9,7 +9,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { contact } from "@/data/cars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { Download } from "lucide-react";
+import { Download, X, Calculator } from "lucide-react";
+import { Dialog } from "@headlessui/react"; // install: npm i @headlessui/react
+
 interface HeroSectionProps {
   car: Car;
 }
@@ -19,7 +21,50 @@ export default function HeroSection({ car }: HeroSectionProps) {
     car.variants.length > 0 ? car.variants[0] : null
   );
 
-  // console.log("Selected car:", car);
+  const [showCreditSimulationModal, setShowCreditSimulationModal] =
+    useState(false);
+
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    dp: "",
+    tenor: "12 Bulan (1 Tahun)",
+  });
+
+  const handleAjukanSimulasi = () => {
+    if (!form.name || !form.phone || !form.dp) {
+      alert("Mohon lengkapi semua data terlebih dahulu.");
+      return;
+    }
+
+    const text = [
+      `Halo, saya ${form.name} ingin simulasi kredit:`,
+      `• Nomor Whatsapp : ${form.phone}`,
+      `• Mobil : ${car.name}`,
+      `• Tipe  : ${selectedVariant?.type}`,
+      `• Harga : ${selectedVariant?.price}`,
+      `• DP    : ${form.dp}`,
+      `• Tenor : ${form.tenor}`,
+      "",
+      "Mohon info lebih lanjut. Terima kasih!",
+    ].join("\n");
+
+    const url = `https://wa.me/${contact.phone}?text=${encodeURIComponent(
+      text
+    )}`;
+    window.open(url, "_blank");
+
+    // ✅ Reset form
+    setForm({
+      name: "",
+      phone: "",
+      dp: "",
+      tenor: "12 Bulan (1 Tahun)",
+    });
+
+    // ✅ Tutup modal
+    setShowCreditSimulationModal(false);
+  };
 
   useEffect(() => {
     if (car.variants.length > 0) {
@@ -187,12 +232,116 @@ export default function HeroSection({ car }: HeroSectionProps) {
                     <Download className="!w-8 !h-8 mr-2" />
                     <span>Download Brosur</span>
                   </Button>
+
+                  <Button
+                    size="lg"
+                    className="w-full sm:w-auto flex items-center text-lg bg-orange-500 hover:bg-orange-600"
+                    onClick={() => setShowCreditSimulationModal(true)}
+                  >
+                    <Calculator className="!w-8 !h-8 mr-2" />
+                    <span>Simulasi Kredit</span>
+                  </Button>
                 </div>
               </motion.div>
             )}
           </AnimatePresence>
         </div>
       </div>
+      <Dialog
+        open={showCreditSimulationModal}
+        onClose={() => setShowCreditSimulationModal(false)}
+        className="fixed z-50 inset-0 overflow-y-auto"
+      >
+        <div className="flex items-center justify-center min-h-screen px-4">
+          <div className="fixed inset-0 bg-black/50" />
+          <div className="relative bg-white dark:bg-zinc-900 rounded-lg w-full max-w-md mx-auto p-6 z-50">
+            <div className="flex justify-between items-center mb-4">
+              <Dialog.Title className="text-lg font-bold">
+                Simulasi Kredit
+              </Dialog.Title>
+              <button onClick={() => setShowCreditSimulationModal(false)}>
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+
+            <div className="space-y-4">
+              <input
+                type="text"
+                placeholder="Nama"
+                className="w-full border rounded px-3 py-2"
+                value={form.name}
+                onChange={(e) => setForm({ ...form, name: e.target.value })}
+              />
+              <input
+                type="text"
+                placeholder="Nomor Telepon"
+                className="w-full border rounded px-3 py-2"
+                value={form.phone}
+                onChange={(e) => setForm({ ...form, phone: e.target.value })}
+              />
+              <input
+                type="text"
+                value={`${car.name} - ${selectedVariant?.type}`}
+                readOnly
+                className="w-full border rounded px-3 py-2 bg-gray-100"
+              />
+              <input
+                type="text"
+                value={`${selectedVariant?.price}`}
+                readOnly
+                className="w-full border rounded px-3 py-2 bg-gray-100"
+              />
+              <input
+                type="text"
+                placeholder="Down Payment (DP)"
+                className="w-full border rounded px-3 py-2"
+                value={form.dp}
+                onChange={(e) => {
+                  const raw = e.target.value.replace(/[^\d]/g, ""); // hanya angka
+                  const formatted = new Intl.NumberFormat("id-ID").format(
+                    Number(raw)
+                  );
+                  setForm({ ...form, dp: `Rp. ${formatted}` }); // simpan angka mentah
+                  e.target.value = `Rp. ${formatted}`; // tampilkan format Rp
+                }}
+                onBlur={(e) => {
+                  const raw = form.dp.replace(/[^\d]/g, "");
+                  const formatted = new Intl.NumberFormat("id-ID").format(
+                    Number(raw)
+                  );
+                  e.target.value = `Rp. ${formatted}`;
+                }}
+                onFocus={(e) => {
+                  e.target.value = form.dp; // hapus "Rp." saat fokus
+                }}
+              />
+              <select
+                className="w-full border rounded px-3 py-2"
+                value={form.tenor}
+                onChange={(e) => setForm({ ...form, tenor: e.target.value })}
+              >
+                <option value="12 Bulan (1 Tahun)">12 Bulan (1 Tahun)</option>
+                <option value="24 Bulan (2 Tahun)">24 Bulan (2 Tahun)</option>
+                <option value="36 Bulan (3 Tahun)">36 Bulan (3 Tahun)</option>
+                <option value="48 Bulan (4 Tahun)">48 Bulan (4 Tahun)</option>
+                <option value="60 Bulan (5 Tahun)">60 Bulan (5 Tahun)</option>
+                <option value="72 Bulan (6 Tahun)">72 Bulan (6 Tahun)</option>
+                <option value="84 Bulan (7 Tahun)">84 Bulan (7 Tahun)</option>
+                <option value="96 Bulan (8 Tahun)">96 Bulan (8 Tahun)</option>
+              </select>
+
+              <Button
+                onClick={handleAjukanSimulasi}
+                className="w-full bg-green-600 hover:bg-green-700"
+              >
+                <FontAwesomeIcon icon={faWhatsapp} className="!w-8 !h-8" />
+                <span>Ajukan Simulasi</span>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </Dialog>
+      ;
     </section>
   );
 }

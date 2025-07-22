@@ -19,14 +19,14 @@ export type BannerImage = {
   name: string;
   image: string;
   dataAiHint: string;
-}
+};
 
 export type ContactPerson = {
   name: string;
   phone: string;
   email: string;
-  address: string;  
-}
+  address: string;
+};
 
 export interface CarVariant {
   type: string;
