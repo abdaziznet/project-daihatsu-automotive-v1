@@ -20,7 +20,7 @@ export const bannerImages: BannerImage[] = [
   {
     id: 1,
     name: "Banner 1",
-    image: "https://i.imgur.com/XS1mdI8.png",
+    image: "https://i.imgur.com/NxG9Hpt.png",
     dataAiHint: "sports car",
   },
   {
