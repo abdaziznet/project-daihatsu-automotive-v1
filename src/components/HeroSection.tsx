@@ -285,12 +285,12 @@ export default function HeroSection({ car }: HeroSectionProps) {
                 readOnly
                 className="w-full border rounded px-3 py-2 bg-gray-100"
               />
-              <input
+              {/* <input
                 type="text"
                 value={`${selectedVariant?.price}`}
                 readOnly
                 className="w-full border rounded px-3 py-2 bg-gray-100"
-              />
+              /> */}
               <input
                 type="text"
                 placeholder="Down Payment (DP)"
