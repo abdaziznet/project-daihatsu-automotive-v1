@@ -38,8 +38,8 @@ export const bannerImages: BannerImage[] = [
   {
     id: 4,
     name: "Banner 4",
-    image: "https://i.imgur.com/31YCAnI.png",
-    dataAiHint: "promo",
+    image: "https://i.imgur.com/TJxtK9s.png",
+    dataAiHint: "Daihatsu Ayla",
   },
   {
     id: 5,
