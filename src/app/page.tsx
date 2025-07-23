@@ -11,6 +11,7 @@ import type { Car } from "@/lib/types";
 import Reviews from "@/components/Reviews";
 import { generateProductSchema } from "@/lib/generateSchema";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import Script from "next/script";
 
 // 🔥 Tambahkan metadata di sini
 
@@ -25,6 +26,26 @@ export default function Home() {
 
   return (
     <>
+      {/* 🔥 Google Ads Tracking */}
+      <Script
+        id="gtag-base"
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17385565252"
+      />
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17385565252');
+        `,
+        }}
+      />
+
+      {/* SEO Structured Data */}
       {/* 🔥 Ini penting untuk SEO Structured Data */}
       <script
         type="application/ld+json"
