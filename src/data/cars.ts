@@ -20,7 +20,7 @@ export const bannerImages: BannerImage[] = [
   {
     id: 1,
     name: "Daihatsu Terios",
-    image: "https://i.imgur.com/NxG9Hpt.png",
+    image: "https://i.imgur.com/IVge9f3.png",
     dataAiHint: "Daihatsu Terios",
   },
   {
