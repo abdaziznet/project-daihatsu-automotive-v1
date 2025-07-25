@@ -404,7 +404,7 @@ export const cars: Car[] = [
   {
     id: "3",
     name: "New Terios",
-    image: "https://i.imgur.com/pb6sWfT.png",
+    image: "https://i.imgur.com/UTyyuUC.png",
     startingPrice: "Rp. 248.050.000",
     dataAiHint: "sports car",
     variants: [
